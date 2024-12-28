@@ -1,0 +1,55 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle = "Get In Touch - beware...I bite";
+const extPageTitle = "";
+const showExtPageTitle = false;
+const gap = 32;
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  showExtPageTitle={showExtPageTitle}
+  extPageTitle={extPageTitle}
+  gap={gap}
+>
+  <!-- Header -->
+  <div class="w-full text-[16px]">
+    <p class="italic text-txtsec mb-[-4px]">Get In Touch</p>
+    <h1 class="text-txtprim">Beware! I bite</h1>
+  </div>
+
+  <!-- Work -->
+  <div class="w-full flex flex-col gap-[12px] text-[14px]">
+    <h2 class="font-medium text-txtprim">Work</h2>
+    <hr />
+    <div class="w-full flex justify-between">
+        <p class="text-txtsec">Mail</p>
+        <p class="text-txtprim">Mail</p>
+    </div>
+    <hr>
+    <div class="w-full flex justify-between">
+        <p class="text-txtsec">LinkedIn</p>
+        <p class="text-txtprim">LinkedIn</p>
+    </div>
+    <hr>
+    <div class="w-full flex justify-between">
+        <p class="text-txtsec">Github</p>
+        <p class="text-txtprim">Github</p>
+    </div>
+    <hr>
+    <div class="w-full flex justify-between">
+        <p class="text-txtsec">Dribble</p>
+        <p class="text-txtprim">Dribble</p>
+    </div>
+  </div>
+
+  <!-- Personal -->
+  <div class="w-full flex flex-col gap-[12px] text-[14px]">
+    <h2 class="font-medium text-txtprim">Personal</h2>
+    <hr />
+    <div class="w-full flex justify-between">
+        <p class="text-txtsec">Instagram</p>
+        <p class="text-txtprim">Instagram</p>
+    </div>
+  </div>
+</BaseLayout>

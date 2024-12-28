@@ -1,0 +1,83 @@
+---
+import Plus from "../assets/Icons/Plus.svg";
+import Footer from "./Footer.astro";
+
+const { pageTitle } = Astro.props;
+const { extPageTitle } = Astro.props;
+const { showExtPageTitle } = Astro.props;
+---
+
+<!-- Main Nav -->
+<nav class="z-30 w-full relative">
+  <div class="w-full flex justify-between items-center">
+    <div class="flex gap-[10px] text-txtsec text-[12px]">
+      <p><a href="/">richmnn.com</a></p>
+      <p>/</p>
+      <p class="text-txtprim lowercase">{pageTitle}</p>
+      {showExtPageTitle && <p>/</p>}
+      {showExtPageTitle && <p class="lowercase">{extPageTitle}</p>}
+    </div>
+
+    <!-- Plus Icon Toggle  -->
+    <div
+      id="menu-toggle"
+      class="text-txtsec hover:text-txtprim hover:cursor-pointer transition-transform duration-300 ease-in-out"
+    >
+      <Plus />
+    </div>
+  </div>
+
+  <!-- Dropdown Menu -->
+  <div
+    id="menu"
+    class="bg-bgprim w-full opacity-0 invisible absolute top-[48px] left-0 p-[32px] border-[1px] border-bddef rounded-[16px] shadow-[-2px_-2px_20px_-10px_rgba(255,255,255,0.25),2px_2px_20px_-10px_rgba(255,255,255,0.25)] transition-opacity duration-[500ms]"
+  >
+    <Footer showHr={false} />
+  </div>
+</nav>
+
+<!-- Background Overlay -->
+<div
+  id="bg-blur"
+  class="opacity-0 invisible fixed top-0 left-0 z-10 w-screen h-screen bg-[rgba(hsl(0, 0%, 10%), 0.8)] backdrop-blur-[10px] transition-opacity duration-[300ms]"
+>
+</div>
+
+<script>
+  // Select the elements
+  const menuToggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu");
+  const bgBlur = document.getElementById("bg-blur");
+  let menuOpen = false;
+
+  // Check if the elements exist before adding event listener
+  if (menuToggle && menu && bgBlur) {
+    menuToggle.addEventListener("click", () => {
+      menuOpen = !menuOpen;
+      if (menuOpen) {
+        bgBlur.classList.remove("opacity-0", "invisible");
+        bgBlur.classList.add("opacity-100", "visible");
+        menu.classList.remove("opacity-0", "invisible");
+        menu.classList.add("opacity-100", "visible");
+        menuToggle.classList.add("rotate-45");
+      } else {
+        bgBlur.classList.add("opacity-0", "invisible");
+        bgBlur.classList.remove("opacity-100", "visible");
+        menu.classList.add("opacity-0", "invisible");
+        menu.classList.remove("opacity-100", "visible");
+        menuToggle.classList.remove("rotate-45"); // Rotate back to '+'
+      }
+    });
+
+    bgBlur.addEventListener("click", () => {
+      menuOpen = !menuOpen;
+      if (!menuOpen) {
+        bgBlur.classList.add("opacity-0", "invisible");
+        bgBlur.classList.remove("opacity-100", "visible");
+        menu.classList.add("opacity-0", "invisible");
+        menu.classList.remove("opacity-100", "visible");
+        menuToggle.classList.remove("rotate-45"); // Rotate back to '+'
+      }
+    });
+  }
+</script>

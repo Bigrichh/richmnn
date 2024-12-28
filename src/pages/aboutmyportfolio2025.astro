@@ -1,0 +1,88 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle = "About my portfolio 2025";
+const extPageTitle = "";
+const showExtPageTitle = false;
+const gap = 32;
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  showExtPageTitle={showExtPageTitle}
+  extPageTitle={extPageTitle}
+  gap={gap}
+>
+  <!-- Header -->
+  <div class="w-full text-[16px]">
+    <h1 class="text-txtprim">About my portfolio 2025</h1>
+  </div>
+
+  <!-- Inspiration -->
+  <div class="w-full flex flex-col gap-[12px] text-[14px]">
+    <hr />
+    <div class="flex flex-col gap-[56px]">
+      <h2 class="font-medium text-txtprim">Inspiration</h2>
+      <p class="text-txtsec">
+        Minimalism has always felt like home to me - clean lines, intentional
+        choices, and an effortless charm that’s hard to ignore. When I stumbled
+        upon <a
+          target="_blank"
+          href="https://slrncl.com/"
+          class="underline text-txtprim hover:text-txtsec"
+        >
+          Nicolas Solerieu’s portfolio</a
+        >, it felt like walking into a perfectly curated room where everything
+        just fit. I loved it so much, I couldn’t help myself - I had to "borrow"
+        (read: shamelessly steal) the structure. Of course, I’ve made it my own
+        and he may never see this, but credit where it’s due: this design is a
+        love letter to his brilliance, with a little sprinkle of my personal
+        touch.
+      </p>
+    </div>
+  </div>
+
+  <!-- Build -->
+  <div class="w-full flex flex-col gap-[12px] text-[14px]">
+    <hr />
+    <div class="flex flex-col gap-[56px]">
+      <h2 class="font-medium text-txtprim">Build</h2>
+      <p class="text-txtsec">
+        This portfolio is powered by Astro and Vue.js - a choice driven by my
+        love for fast, modern web experiences and the clean simplicity they
+        bring to development. Vue.js lets me balance structure and creativity,
+        while Astro ensures blazing speed for every page. Building this wasn’t
+        just about showcasing my work; it was an exercise in blending tools that
+        align with my philosophy: efficiency coupled with minimalism.
+      </p>
+    </div>
+  </div>
+
+  <!-- Evolution -->
+  <div class="w-full flex flex-col gap-[12px] text-[14px]">
+    <hr />
+    <div class="flex flex-col gap-[56px]">
+      <h2 class="font-medium text-txtprim">Evolution</h2>
+      <p class="text-txtsec">
+        This portfolio is just a snapshot - a living, breathing project that
+        will grow as I do. Today, it’s about who I am; tomorrow, it’ll reflect
+        who I’ve become. From adding new features to refining old ones, this
+        space will always be in progress, much like me.
+      </p>
+    </div>
+  </div>
+
+  <!-- The Easter Eggs -->
+  <div class="w-full flex flex-col gap-[12px] text-[14px]">
+    <hr />
+    <div class="flex flex-col gap-[56px]">
+      <h2 class="font-medium text-txtprim">The Easter Eggs</h2>
+      <p class="text-txtsec">
+        Because what’s a portfolio without a little fun? Keep an eye out for
+        hidden nods to my quirks and interests tucked away in the details. Maybe
+        it’s a random animation, a playful interaction, or a piece of code that
+        reveals a secret message. Consider this my way of saying thanks for
+        visiting.
+      </p>
+    </div>
+  </div>
+</BaseLayout>

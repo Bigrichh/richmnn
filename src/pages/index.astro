@@ -1,0 +1,47 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle = "Home";
+const extPageTitle = "";
+const showExtPageTitle = false;
+const gap = 32;
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  showExtPageTitle={showExtPageTitle}
+  extPageTitle={extPageTitle}
+  gap={gap}
+>
+  <!-- Header -->
+  <div class="w-full text-[16px]">
+    <p class="italic text-txtsec mb-[-4px]">The internet corner of</p>
+    <h1 class="text-txtprim">
+      Richmann Addai, product designer | software engineer; web
+    </h1>
+  </div>
+
+  <!-- Hi -->
+  <div class="w-full flex flex-col gap-[12px] text-[14px]">
+    <hr />
+    <div class="flex flex-col gap-[56px]">
+      <h2 class="text-txtprim">Hi,</h2>
+      <p class="text-txtsec">
+        I am a product designer and developer - designing user experiences that
+        linger long after the screen fades to black and building the technology
+        bringing those experiences to life. I’m just a chill guy from Accra,
+        Ghana thriving in both fields with equal skill and precision. By day, I
+        work with
+        <a
+          target="_blank"
+          href="https://utopiatech.africa/"
+          class="underline text-txtprim hover:text-txtsec">Utopia Tech</a
+        > as a Software Engineer, and by night, I juggle design and development contracts,
+        personal projects, and side hustles - ranging from entrepreneurial experiments
+        to designing and building software products solving real-world problems.
+        This is my humble corner of the web - here, you’ll find a collection of professional
+        work, UI/UX explorations, and software projects. Find all of this by exploring
+        the links below.
+      </p>
+    </div>
+  </div>
+</BaseLayout>

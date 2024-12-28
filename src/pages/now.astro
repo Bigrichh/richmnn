@@ -1,0 +1,114 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle = "Now";
+const extPageTitle = "";
+const showExtPageTitle = false;
+const gap = 32;
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  showExtPageTitle={showExtPageTitle}
+  extPageTitle={extPageTitle}
+  gap={gap}
+>
+  <!-- Header -->
+  <div class="w-full text-[16px]">
+    <p class="italic text-txtsec mb-[-4px]">Updated 1st January 2025</p>
+    <h1 class="text-txtprim">Now - my present reality</h1>
+  </div>
+
+  <!-- Work -->
+  <div class="w-full flex flex-col gap-[12px] text-[14px]">
+    <hr />
+    <div class="flex flex-col gap-[56px]">
+      <h2 class="font-medium text-txtprim">Work</h2>
+      <p class="text-txtsec">
+        I’m currently working with <a
+          target="_blank"
+          href="https://utopiatech.africa/"
+          class="underline text-txtprim hover:text-txtsec">Utopia Tech</a
+        > as a Software Engineer. On the side, I’m tackling a few freelance design
+        and development projects that keep things interesting. I’ve got my eyes open
+        for new challenges and opportunities that align with my goals, and I’m actively
+        studying and refining my craft to meet them head-on.
+      </p>
+    </div>
+  </div>
+
+  <!-- Learning -->
+  <div class="w-full flex flex-col gap-[12px] text-[14px]">
+    <hr />
+    <div class="flex flex-col gap-[56px]">
+      <h2 class="font-medium text-txtprim">Learning</h2>
+      <p class="text-txtsec">
+        I’m studying towards mastering advanced software engineering and web
+        development concepts. Between juggling projects and work, I’m sneaking
+        in time to explore new tools, frameworks, and ways to build better user
+        interfaces and experiences. I’ve also picked up books on communication
+        and self-development to round things out. You can find some of my
+        current reads over at <a
+          href="/betweenthelines"
+          class="underline text-txtprim hover:text-txtsec"
+          >Between the Lines - pages that inspire</a
+        >.
+      </p>
+    </div>
+  </div>
+
+  <!-- Fitness -->
+  <div class="w-full flex flex-col gap-[12px] text-[14px]">
+    <hr />
+    <div class="flex flex-col gap-[56px]">
+      <h2 class="font-medium text-txtprim">Fitness</h2>
+      <p class="text-txtsec">
+        I’ve been sticking to a simple home calisthenics routine - upper body,
+        lower body, rest, repeat. It’s nothing fancy, but it keeps me active
+        ,feeling and of course looking good. Aside this being one of my ways of
+        practicing discipline, It’s my way of recharging after long days indoors
+        designing and coding. That said, I’ve got plans to eventually hit the
+        gym and chase a fitness goal that’s been hiding somewhere in one of my
+        Pinterest boards for a while.
+      </p>
+    </div>
+  </div>
+
+  <!-- Travel & Eats -->
+  <div class="w-full flex flex-col gap-[12px] text-[14px]">
+    <hr />
+    <div class="flex flex-col gap-[56px]">
+      <h2 class="font-medium text-txtprim">Travel & Eats</h2>
+      <p class="text-txtsec">
+        I spent most of 2024 cooped up indoors, busy with work and study - you
+        already know how it goes. This year, I’ve set a goal to step out
+        more—explore new places, try different foods, meet interesting people,
+        and soak in fresh experiences. Maybe I’ll even treat myself to a
+        tropical vacation. Fingers crossed, you’ll catch these adventures unfold
+        on my <a
+          href="/visualdiary"
+          class="underline text-txtprim hover:text-txtsec"
+          >Visual Diary - moments worth sharing</a
+        >.
+      </p>
+    </div>
+  </div>
+
+  <!-- Experiments & Odd Ideas -->
+  <div class="w-full flex flex-col gap-[12px] text-[14px]">
+    <hr />
+    <div class="flex flex-col gap-[56px]">
+      <h2 class="font-medium text-txtprim">Experiments & Odd Ideas</h2>
+      <p class="text-txtsec">
+        Outside of work and entrepreneurial experiments, I’ve always got a few
+        things simmering in the background. Right now, it’s a mix of designing
+        and building concepts for sass ideas and experimenting with sustainable
+        practices. Hopefully I can grow herbs on my balcony without killing them
+        - because why not try to make the world a little greener while I’m at
+        it? And of course, I’ve got a side mission to master the art of cooking
+        (trying to impress somebody’s daughter, and trust me - the kitchen is an
+        entirely different battleground but winners never quit!). It’s the
+        little things that keep life interesting.
+      </p>
+    </div>
+  </div>
+</BaseLayout>
