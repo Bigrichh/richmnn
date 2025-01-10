@@ -1,6 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "About";
+const pageDescription =
+  "Product designer & software engineer(primarily focused on web development) - designing best-in-class user experiences and building the technology bringing those experiences to life.";
+const ogURL = "https://richmnn.vercel.app/about";
+const keywords =
+  "Software Engineer, Product Designer, Web Design & Development, High-Performing Software, Web Development, Empathy in Design, Design and Code, User-Centered Design, User Experience (UX), Problem Solving, Technology & People, Tech & Creativity, Design Process, Development Skills, Design & Development Integration, Personal Growth & Development, Resilience in Tech, Professional Journey, Continuous Learning, Software Solutions, Tech Industry Insights, Technology for Real-World Impact, Lifelong Learning, Self-Improvement, Tech & Empathy, Building Better User Experiences, Work-Life Balance in Tech, Chelsea Football Fan, Anime Inspiration, Knowledge Acquisition, Personal Reflection.";
+
 const extPageTitle = "";
 const showExtPageTitle = false;
 const gap = 16;
@@ -8,6 +14,9 @@ const gap = 16;
 
 <BaseLayout
   pageTitle={pageTitle}
+  pageDescription={pageDescription}
+  ogURL={ogURL}
+  keywords={keywords}
   showExtPageTitle={showExtPageTitle}
   extPageTitle={extPageTitle}
   gap={gap}
@@ -21,9 +30,9 @@ const gap = 16;
   <div class="w-full flex flex-col gap-[12px] text-[14px]">
     <hr />
     <div class="flex flex-col gap-[56px]">
-      <h2 class="font-medium text-txtprim">
-        I’m a product designer & software engineer building experiences for the
-        web.
+      <h2 class="text-txtprim">
+        I’m a software engineer & product designer, designing & building
+        experiences for the web.
       </h2>
       <p class="text-txtsec">
         I design and build high performing software products primarily for the
@@ -34,14 +43,14 @@ const gap = 16;
           target="_blank"
           href="https://utopiatech.africa/"
           class="underline text-txtprim hover:text-txtsec">Utopia Tech</a
-        > as a software engineer. Learn more about my <a
+        > as a software engineer. Learn more about <a
           href="/work-pd"
           class="underline text-txtprim hover:text-txtsec"
-          >work - product design</a
-        > or explore my <a
+          >my work as a product designer</a
+        > or explore <a
           href="/work-se"
           class="underline text-txtprim hover:text-txtsec"
-          >work - software engineering; web</a
+          >my work as a software engineer</a
         >.
       </p>
     </div>
@@ -51,7 +60,7 @@ const gap = 16;
   <div class="w-full flex flex-col gap-[12px] text-[14px]">
     <hr />
     <div class="flex flex-col gap-[56px]">
-      <h2 class="font-medium text-txtprim">A glimpse at my work</h2>
+      <h2 class="text-txtprim">A glimpse at my work</h2>
       <div class="w-full h-[410px] bg-bgsec flex items-center justify-center">
         <p class="text-txtsec text-[12px]">coming soon</p>
       </div>
@@ -62,125 +71,148 @@ const gap = 16;
   <div class="w-full flex flex-col gap-[12px] text-[14px]">
     <hr />
     <div class="flex flex-col gap-[56px]">
-      <h2 class="font-medium text-txtprim">
+      <h2 class="font-normal text-txtprim">
         Extended Unflitered About - Credit to Chat GPT for helping me polish the
         rough ends
       </h2>
-      <p class="text-txtsec">
-        Hi - again. I’d love to tell you I didn’t always know I wanted to be a
-        Software Engineer, but the truth? I’ve always known and frankly speaking
-        it’s been a journey of curiosity, trial and a LOT of failures that
-        eventually led me to some successes. On the other hand I had no idea I’d
-        ever become a product designer - especially since empathy which is a big
-        part of product design isn’t exactly my strongest suit. It still doesn’t
-        take away from the fact that I’ve had an eye for design for as long as I
-        can remember - from second grade when my art teacher praised me for
-        having a good eye for patterns to the random anime characters I used to
-        draw in middle school to now where I paint as a hobby. I never saw
-        myself walking the path that led to design, yet here I am. Back then, I
-        couldn’t explain why certain colors just worked or why arranging things
-        in a particular way felt so satisfying. It wasn’t until I started
-        learning the principles of design that I realized there’s a method to
-        creating those results. Now, I get to combine that instinct with skill,
-        turning ideas into clean and functional realities but that’s just by the
-        way.
-      </p>
-      <p class="text-txtsec">
-        I’ll spare you the typical childhood story about being fascinated with
-        computers and how the TV remote worked - even though there’s some degree
-        of truth to this - but the fact is, my interest lies in why certain
-        products look good. Why they keep their users coming back and what makes
-        them so much more engaging than others and how I can replicate this to
-        solve problems. It’s not something I obsess over, but good design WILL
-        make me stop and pay attention to the details. While I appreciate the
-        value of standardized ‘UX principles,’ I like to go deeper, exploring
-        these ideas through books, observation, and just paying attention to
-        what makes a product feel right.
-      </p>
-      <p class="text-txtsec">
-        I didn’t start out in a fancy design studio or as part of a big
-        engineering team. I started like most people - with self-doubt,
-        countless late nights, books books books and more Googling and Chat
-        GPTing in my room than I’d like to admit. But somewhere along late
-        nights spent working on my craft, I realized that I loved solving
-        problems and building systems, especially the kind of problems that
-        impact real people when they’re solved. The kind of solutions that make
-        someone’s life just a little easier, their work a little smoother, or
-        their experience a little bit better.
-      </p>
-      <p class="text-txtsec">
-        I won’t pretend to be the biggest people person. Blame it on the
-        introvert in my ambiverted nature - let’s face it, humans can be a pain
-        sometimes. But over the years, I’ve come to deeply appreciate the human
-        side of what I do. Sure, I build websites, apps, and tools, but it’s
-        never just about the code or the design. At the core, it’s about the
-        people who use them. Every project I take on reflects a simple belief:
-        technology should serve, not overwhelm. It’s not about flashy features
-        or overly complex solutions - it’s about creating something that
-        genuinely makes life better for the next person, even in small ways.
-      </p>
-      <p class="text-txtsec">
-        I’ve worked hard to carve out a space for myself where two worlds meet:
-        the creative and the technical. Design and development. For me, design
-        is rooted in empathy - a skill I had to consciously learn. It’s about
-        stepping into someone else’s shoes and understanding their needs -
-        seeing through their eyes. Development, though, is where that empathy
-        comes alive. It’s where ideas take shape. I get to take concepts that
-        once seemed impossible and turn them into reality - one feature, one
-        function, and one thoughtful detail at a time
-      </p>
-      <p class="text-txtsec">
-        This journey hasn’t been without its challenges. There were moments of
-        doubt, days when things didn’t work no matter how many hours I poured
-        into them, and sleepless nights spent trying to balance work, study, and
-        the pursuit of self-improvement. Yet, every struggle has taught me
-        something invaluable. It’s shown me resilience. It’s taught me to trust
-        the process, to adapt in this ever changing eco system of tech, and to
-        push boundaries - not just for myself but for the people who will use
-        what I create. For the people I work for and with.
-      </p>
-      <p class="text-txtsec">
-        Outside of work, I’m just human - flawed, curious, and figuring things
-        out like everyone else. I overthink (not as often but sometimes way too
-        much for my own good). By default, I’m a pretty laid-back guy. I work
-        hard, and I fail more often than I’d like to admit. But that’s life,
-        isn’t it? I stumble, I fall, but I pick myself up, learn from the
-        experience, and keep moving forward. Also, let’s be real - good food
-        will always have a piece of my heart (and yes, I’d absolutely sell our
-        friendship for it). Right now, I’m chasing somebody’s daughter, trying
-        to navigate love like the rest of us. I’m a sucker for good books,
-        Pinterest boards full of inspiration, and, of course, Chelsea - the
-        greatest football team in the world (don’t argue; it’s just facts). I’ve
-        got this thing for dressing sharp and looking good, not just for the
-        sake of appearance but for the sake of appearance ... you get it? Most
-        of the time, you’ll find me in my room, probably working or plotting my
-        next big idea. But I’m working on stepping outside my comfort zone -
-        literally. Exploring the world, meeting new people, and soaking in
-        everything life has to offer is something I’m striving for. Anime? Let
-        me tell you, it’s more than just entertainment. There’s so much depth,
-        emotion, and storytelling to learn from if you give it a chance. It’s a
-        shame more people don’t see that. At the end of the day, I’m just a
-        chill guy - trying to survive, learn, adapt, and win at this thing
-        called life. It’s messy, unpredictable, and sometimes exhausting, but I
-        wouldn’t trade the journey for anything. We’re all just figuring it out,
-        one day at a time, and that’s the beauty of it.
-      </p>
-      <p class="text-txtsec">
-        This portfolio? It’s not just a showcase of what I can do - it’s a part
-        of me. I don’t claim to have it all figured out, but I’m committed to
-        growth - to learning through every project especially where I fall short
-        because no matter how “Senior” I get there’ll always something I don’t
-        know and that’s a humbling thought. I’m here for every mistake and every
-        challenge because that’s where growth starts. If you’ve made it this
-        far, thank you. Thank you for taking the time to see the person behind
-        the work.
-      </p>
-      <p class="text-txtsec">
-        <a href="/getintouch" class="underline text-txtprim hover:text-txtsec"
-          >Reach out</a
-        > to say hello if you’ve liked what you’ve seen, let’s create something together
-        - but beware I bite
-      </p>
+      <div class="flex flex-col gap-[24px]">
+        <p class="text-txtsec">
+          Hi - again. It took me a while to figure out what I’d say here.
+          Outside of the “professional” we’re all just normal people with
+          families and friends. With likes, dislikes and interests. In the next
+          few(maybe not so few) words is my take on showing you the professional
+          Richmann as well as the Richmann behind the professional. I’d talk
+          about my work for a bit and humbly transition to a few honest words
+          about the kind of person I am.
+        </p>
+        <p class="text-txtsec">
+          So where to start. I’d love to tell you I didn’t always know I wanted
+          to be a Software Engineer, but that’s far from the truth. I’ve always
+          known(ever since I was a kid actually) and it’s something I’ve made a
+          conscious effort to work hard at. Like everything else worth going
+          after, It has come with it’s fair share of challenges and a LOT of
+          failures which have eventually led to learning and to successes that
+          have fueled my drive to keep learning. To keep breaking down the
+          challenges as they come and to keep going.
+        </p>
+        <p class="text-txtsec">
+          On the other hand I had no idea I’d ever become a product designer. I
+          never even knew what that was until a few years ago. And it’s
+          interesting I find myself here especially considering the fact that
+          empathy which is a big part of product design isn’t exactly my
+          strongest suit. It still doesn’t take away from the fact that I’ve had
+          an eye for design for as long as I can remember - from second grade
+          when my art teacher gave me credit for having a good eye for patterns
+          and colors to the random anime characters I used to draw in middle
+          school to now, where I sometimes paint on random Sunday evenings. Back
+          then, I couldn’t explain why certain colors just worked or why
+          arranging things in a particular order led to satisfying results. It
+          wasn’t until I learnt design and the science behind why people act in
+          certain ways that I realized there’s a method to replicating those
+          results.
+        </p>
+        <p class="text-txtsec">
+          Professionally, my interest currently lies in why certain products
+          look good. Why they keep their users coming back. What makes them so
+          much more engaging than others and how I can replicate this in design
+          and development to solve problems. It’s not something I obsess over,
+          but good design WILL make me stop and pay attention to the details.
+          Some people say good design is invisible and while I appreciate the
+          value of standardized ‘UX principles,’ I like to go deeper, exploring
+          the science behind these ideas through books, observation, and just
+          paying attention to what makes a product feel right to users.
+        </p>
+        <p class="text-txtsec">
+          I didn’t start out in a fancy design studio or as part of a big
+          engineering team. I started with a surge of motivation, some
+          self-doubt, countless late nights, books books books and more googling
+          and “chat gpting” in my room than I’d like to admit. I enjoy solving
+          problems and building systems - the kind of problems that impact real
+          people when they’re solved. The kind of solutions that make someone’s
+          life just a little easier, their work a little smoother, or their
+          experience a little bit better.
+        </p>
+        <p class="text-txtsec">
+          I won’t pretend to be the biggest people person. Blame it on the
+          introvert in my ambiverted nature but over the years, I’ve come to
+          deeply appreciate the human side of what I do. Sure, I design and
+          build websites, apps, and tools, but it’s never just about the code or
+          the design. At the core, it’s about the people who produce and use
+          them and how it affects them positively. Every project I take on
+          reflects a simple belief: technology should serve, not overwhelm. It’s
+          not about flashy features or overly complex solutions - it’s about
+          creating something that genuinely makes life better for the next
+          person, even in small ways. For me, design is rooted in empathy
+          amongst other things - a skill I had to consciously learn. It’s about
+          stepping into someone else’s shoes, understanding their needs and
+          seeing through their eyes. Development, though, is where that empathy
+          comes alive. It’s where ideas take shape. I get to take concepts and
+          turn them into reality - one product, one feature, one function, and
+          one thoughtful detail at a time.
+        </p>
+        <p class="text-txtsec">
+          I’ve worked hard to carve out a space for myself where these two
+          worlds meet: the creative and the technical. Design and development.
+          Credit to my family, friends and colleagues who have been a big help
+          throughout this journey because it hasn’t been without challenges. The
+          sleepless nights spent trying to balance work, study, life outside of
+          work, and the pursuit of self-improvement. Yet, every struggle has
+          taught me resilience and the ability to adapt in this ever changing
+          eco system of tech. To push boundaries - not just for myself but for
+          the people I work for and with and for the people who will use what I
+          create.
+        </p>
+        <p class="text-txtsec">
+          Outside of work, I’m just like everybody else - unique in my own way
+          but equally similar in many different aspects. I’m most definitely not
+          perfect and knowing this I strive to be 1% better each day(something i
+          picked up from atomic habits by James Clear - I read a lot). Learning
+          as I go. By default, I’m a pretty laid-back guy. Calmness is hopefully
+          a trait you’d notice if we ever meet. It’s easier to think clearly
+          through problems and situations in a calm state. I work hard, and I
+          fail more often than I’d like to admit. I stumble, I fall, I pick
+          myself up, learn from experience, and keep moving forward. You’ll
+          forever find me where there’s good food (and I might even trade our
+          friendship for extra food). I’m a sucker for books and reading in
+          general, what I like to frame as “knowledge acquisition” - I think i
+          mentioned I read a lot earlier. Find me with Pinterest boards full of
+          inspiration, and, of course with Chelsea - the greatest football team
+          in the world (you can make your case when we meet :) ). I’ve got this
+          thing for dressing sharp and looking good, not just for the sake of
+          appearance but definitely for the sake of appearance ... you get it?
+          Most of the time, you’ll find me in my room, probably working or
+          plotting my next big idea which is ironic considering i’m very much an
+          outdoor person (given the right setting that is). But I’ve recently
+          made a conscious effort in stepping outside my comfort zone - again.
+          Exploring the world, meeting new people, and soaking in everything
+          life has to offer is something I’m striving for - more food please.
+          Anime? It’s more than just cinema and entertainment. There’s so much
+          depth, emotion, and storytelling to learn from if you give it a
+          chance. At the end of the day, I’m just a chill guy - becoming better
+          each day and learning to adapt and win at this thing called life. Just
+          like you figuring it out, one day at a time if you haven’t already.
+        </p>
+        <p class="text-txtsec">
+          This portfolio? It’s not just a showcase of what I’ve done and can do
+          - it’s a part of me. I don’t claim to have it all figured out, but I’m
+          committed to growth - to learning through every project (by myself and
+          from my peers) especially where I fall short because no matter how
+          “Senior” I get there’ll always something I don’t know and that’s a
+          humbling thought. Find me where challenges are because that’s where
+          growth starts. If you’ve made it this far, thank you. Thank you for
+          taking the time to see the person behind the work. I hope I didn’t
+          give off a boastful impression - just a chill guy at the end of the
+          day.
+        </p>
+        <p class="text-txtsec">
+          <a href="/getintouch" class="underline text-txtprim hover:text-txtsec"
+            >Reach out</a
+          > to say hello. I'd like to know how you feel about being here on my website
+          so feel free to reach out. My gratitude for the opportunity to be here
+          now is larger than an html file can hold. You could be anywhere - and yet,
+          you are here now.
+        </p>
+      </div>
     </div>
   </div>
 </BaseLayout>

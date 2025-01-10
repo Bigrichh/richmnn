@@ -1,6 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "Now";
+const pageDescription =
+  "Product designer & software engineer(primarily focused on web development) - designing best-in-class user experiences and building the technology bringing those experiences to life.";
+const ogURL = "https://richmnn.vercel.app/now";
+const keywords =
+  "Richmann Addai, software engineer, web development, product designer, UI/UX design, technology solutions, user experiences, entrepreneurial projects, Utopia Tech, personal projects, software development, design and development, software products";
+
 const extPageTitle = "";
 const showExtPageTitle = false;
 const gap = 32;
@@ -8,13 +14,16 @@ const gap = 32;
 
 <BaseLayout
   pageTitle={pageTitle}
+  pageDescription={pageDescription}
+  ogURL={ogURL}
+  keywords={keywords}
   showExtPageTitle={showExtPageTitle}
   extPageTitle={extPageTitle}
   gap={gap}
 >
   <!-- Header -->
   <div class="w-full text-[16px]">
-    <p class="italic text-txtsec mb-[-4px]">Updated 1st January 2025</p>
+    <p class="italic text-txtsec mb-[-4px]">Updated 10th January 2025</p>
     <h1 class="text-txtprim">Now - my present reality</h1>
   </div>
 
@@ -22,7 +31,7 @@ const gap = 32;
   <div class="w-full flex flex-col gap-[12px] text-[14px]">
     <hr />
     <div class="flex flex-col gap-[56px]">
-      <h2 class="font-medium text-txtprim">Work</h2>
+      <h2 class="text-txtprim">Work</h2>
       <p class="text-txtsec">
         I’m currently working with <a
           target="_blank"
@@ -40,18 +49,13 @@ const gap = 32;
   <div class="w-full flex flex-col gap-[12px] text-[14px]">
     <hr />
     <div class="flex flex-col gap-[56px]">
-      <h2 class="font-medium text-txtprim">Learning</h2>
+      <h2 class="text-txtprim">Learning</h2>
       <p class="text-txtsec">
         I’m studying towards mastering advanced software engineering and web
         development concepts. Between juggling projects and work, I’m sneaking
         in time to explore new tools, frameworks, and ways to build better user
-        interfaces and experiences. I’ve also picked up books on communication
-        and self-development to round things out. You can find some of my
-        current reads over at <a
-          href="/betweenthelines"
-          class="underline text-txtprim hover:text-txtsec"
-          >Between the Lines - pages that inspire</a
-        >.
+        interfaces and experiences. I’ve also picked up books on communication,
+        business & finance and self-development to round things out.
       </p>
     </div>
   </div>
@@ -60,7 +64,7 @@ const gap = 32;
   <div class="w-full flex flex-col gap-[12px] text-[14px]">
     <hr />
     <div class="flex flex-col gap-[56px]">
-      <h2 class="font-medium text-txtprim">Fitness</h2>
+      <h2 class="text-txtprim">Fitness</h2>
       <p class="text-txtsec">
         I’ve been sticking to a simple home calisthenics routine - upper body,
         lower body, rest, repeat. It’s nothing fancy, but it keeps me active
@@ -77,14 +81,14 @@ const gap = 32;
   <div class="w-full flex flex-col gap-[12px] text-[14px]">
     <hr />
     <div class="flex flex-col gap-[56px]">
-      <h2 class="font-medium text-txtprim">Travel & Eats</h2>
+      <h2 class="text-txtprim">Travel & Eats</h2>
       <p class="text-txtsec">
         I spent most of 2024 cooped up indoors, busy with work and study - you
         already know how it goes. This year, I’ve set a goal to step out
         more—explore new places, try different foods, meet interesting people,
         and soak in fresh experiences. Maybe I’ll even treat myself to a
-        tropical vacation. Fingers crossed, you’ll catch these adventures unfold
-        on my <a
+        vacation this year if i'm lucky. Fingers crossed, you’ll catch these
+        adventures unfold on my <a
           href="/visualdiary"
           class="underline text-txtprim hover:text-txtsec"
           >Visual Diary - moments worth sharing</a
@@ -97,17 +101,14 @@ const gap = 32;
   <div class="w-full flex flex-col gap-[12px] text-[14px]">
     <hr />
     <div class="flex flex-col gap-[56px]">
-      <h2 class="font-medium text-txtprim">Experiments & Odd Ideas</h2>
+      <h2 class="text-txtprim">Experiments & Odd Ideas</h2>
       <p class="text-txtsec">
         Outside of work and entrepreneurial experiments, I’ve always got a few
         things simmering in the background. Right now, it’s a mix of designing
-        and building concepts for sass ideas and experimenting with sustainable
-        practices. Hopefully I can grow herbs on my balcony without killing them
-        - because why not try to make the world a little greener while I’m at
-        it? And of course, I’ve got a side mission to master the art of cooking
-        (trying to impress somebody’s daughter, and trust me - the kitchen is an
-        entirely different battleground but winners never quit!). It’s the
-        little things that keep life interesting.
+        and building concepts for sass ideas and filling up my knowledge
+        buckets. I’ve got a side mission to be a top chef ( and trust me - the
+        kitchen is an entirely different battleground but winners never quit!).
+        It’s the little things that keep life interesting.
       </p>
     </div>
   </div>
