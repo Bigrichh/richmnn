@@ -1,10 +1,116 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "Work - product design";
-const extPageTitle = "";
-const showExtPageTitle = false;
-const gap = 240;
+const gap = 16;
 ---
 
-<BaseLayout pageTitle={pageTitle}  showExtPageTitle={showExtPageTitle} extPageTitle={extPageTitle} gap={gap}>
+<BaseLayout
+  pageTitle={pageTitle}
+  gap={gap}
+>
+  <!-- Header -->
+  <div class="w-full text-[16px]">
+    <p class="italic text-txtsec mb-[-4px]">2023-25</p>
+    <h1 class="text-txtprim">Selected Work - product design</h1>
+  </div>
+
+  <!-- Projeccts Container -->
+  <div class="self-center w-full lg:w-[810px] h-fit flex flex-col gap-[120px]">
+    <!-- First class -->
+    <div class="w-full h-fit flex flex-col gap-[40px] md:gap-[60px]">
+      <div
+        class="relative w-full h-fit lg:h-[600px] bg-bgsec rounded-[4px] overflow-hidden"
+      >
+        <img
+          class="w-full h-full object-cover"
+          src="/src/assets/work-pd-images/relay/blank.jpg"
+          alt="relay image"
+        />
+
+        <p
+          class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-[14px] text-txtsec"
+        >
+          Coming soon
+        </p>
+      </div>
+      <div class="self-center w-full lg:w-[610px] flex gap-[120px]">
+        <p class="hidden md:block text-[14px] text-txtsec text-nowrap">
+          Coming Soon
+        </p>
+        <div class="flex flex-col gap-[16px]">
+          <h2 class="text-[14px] text-txtprim">FirstClass</h2>
+          <p class="text-[14px] text-txtsec">
+            Product design for a product that equips university students with
+            essential study resources, easy-to-use study tools, and helpful
+            campus services with the goal of making their university stay easier
+            and more productive.
+          </p>
+          <p class="text-[12px] text-txtsec">
+            Product Design, Web & Mobile — Self Initiated
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Relay -->
+    <a href="/work-pd/relay">
+      <div class="w-full h-fit flex flex-col gap-[40px] md:gap-[60px]">
+        <div
+          class="w-full h-fit lg:h-[600px] bg-bgsec rounded-[4px] overflow-hidden"
+        >
+          <img
+            class="w-full h-full object-cover"
+            src="/src/assets/work-pd-images/relay/relay.jpg"
+            alt="relay image"
+          />
+        </div>
+        <div class="self-center w-full lg:w-[610px] flex gap-[120px]">
+          <p class="hidden md:block text-[14px] text-txtsec text-nowrap">
+            2025
+          </p>
+          <div class="flex flex-col gap-[16px]">
+            <h2 class="text-[14px] text-txtprim">Relay</h2>
+            <p class="text-[14px] text-txtsec">
+              Relay is a fast, reliable, and customizable Bulk SMS platform for
+              businesses of all sizes. I designed the experience and interface
+              to simplify campaign management, improve message deliverability,
+              and provide real-time analytics—all within a clean, scalable
+              system.
+            </p>
+            <p class="text-[12px] text-txtsec">
+              Product Design, Web — In-house
+            </p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!-- EyeContact Vision Care -->
+    <!-- <a href="/work-pd/relay"> -->
+    <div class="w-full h-fit flex flex-col gap-[40px] md:gap-[60px]">
+      <div
+        class="w-full h-fit lg:h-[600px] bg-bgsec rounded-[4px] overflow-hidden"
+      >
+        <img
+          class="w-full h-full object-cover"
+          src="/src/assets/work-pd-images/ecvc/ecvc.jpg"
+          alt="relay image"
+        />
+      </div>
+      <div class="self-center w-full lg:w-[610px] flex gap-[120px]">
+        <p class="hidden md:block text-[14px] text-txtsec text-nowrap">2024</p>
+        <div class="flex flex-col gap-[16px]">
+          <h2 class="text-[14px] text-txtprim">EyeContact Vision Care</h2>
+          <p class="text-[14px] text-txtsec">
+            Web design refresh for EyeContact Vision Care, a trusted optometry
+            practice. The goal was to modernize their online web presence and
+            create a clean, welcoming, customer focused design that reflected
+            their commitment to exceptional care.
+          </p>
+          <p class="text-[12px] text-txtsec">Web Design — Freelance</p>
+        </div>
+      </div>
+    </div>
+    <!-- </a> -->
+  </div>
 </BaseLayout>

@@ -1,0 +1,1273 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const pageTitle = "case study for relay";
+const gap = 32;
+---
+
+<BaseLayout pageTitle={pageTitle} gap={gap}>
+  <!-- Header -->
+  <div class="w-full text-[16px]">
+    <p class="italic text-txtsec mb-[-4px]">2025</p>
+    <h1 class="text-txtprim">Relay</h1>
+  </div>
+
+  <!-- Main Image -->
+  <div
+    class="w-full h-fit xl:w-[810px] xl:h-[600px] self-center rounded-[4px] overflow-hidden"
+  >
+    <img
+      class="w-full h-full object-cover"
+      src="/src/assets/work-pd-images/relay/relay.jpg"
+      alt="relay image"
+    />
+  </div>
+
+  <!-- Overview -->
+  <div class="w-full flex flex-col gap-[60px]">
+    <!-- Section Header -->
+    <h2 class="text-[16px] text-txtsec italic">Overview</h2>
+
+    <div class="flex flex-col gap-[60px]">
+      <!-- Role | Timeline | Tools -->
+      <div class="flex flex-col gap-[12px]">
+        <hr />
+        <div
+          class="flex flex-col gap-[12px] md:gap-0 md:flex-row w-full justify-between"
+        >
+          <div class="flex flex-col gap-[12px]">
+            <p class="text-[14px] text-txtprim">Role</p>
+            <div>
+              <p class="text-[14px] text-txtsec">Product Designer</p>
+              <p class="text-[14px] text-txtsec">Front-end Developer</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-[12px]">
+            <p class="text-[14px] text-txtprim">Timeline</p>
+            <p class="text-[14px] text-txtsec">Jan 2025 - Ongoing</p>
+          </div>
+          <div class="flex flex-col gap-[12px]">
+            <p class="text-[14px] text-txtprim">Tools</p>
+            <p class="text-[14px] text-txtsec">Figma</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Overview Statement -->
+      <div>
+        <p class="text-[14px] text-txtsec">
+          Communication is at the heart of every successful business, and SMS
+          remains one of the most direct and effective channels for reaching
+          customers. However, many bulk SMS solutions lack reliability,
+          customization, and well researched, well thought out interfaces. Relay
+          was created to solve these pain points by providing a scalable and
+          efficient bulk SMS platform that makes it easy for businesses to
+          connect with their audiences.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background -->
+  <div class="w-full flex flex-col gap-[60px]">
+    <!-- Section header -->
+    <h2 class="text-[16px] text-txtsec italic">Background</h2>
+
+    <!-- Introduction -->
+    <div class="flex flex-col gap-[60px]">
+      <div class="flex flex-col gap-[12px]">
+        <hr />
+        <h2 class="text-[14px] text-txtprim">Introduction</h2>
+        <p class="text-[14px] text-txtsec">
+          Relay began as an in-house initiative assigned to me by stakeholders.
+          The goal was to design and develop a web application with the main
+          focus being a bulk SMS feature to handle SMS communications for a
+          pre-existing in-house eCommerce SaaS solution. Relay was meant to be
+          crafted into a Software-as-a-Service (SaaS) platform for other
+          businesses looking to manage their bulk messaging needs.
+        </p>
+      </div>
+
+      <!-- Projejct goals -->
+      <div class="flex flex-col gap-[12px]">
+        <hr />
+        <h2 class="text-[14px] text-txtprim">Project Goals</h2>
+        <p class="text-[14px] text-txtsec">
+          Relay aims to achieve the following:
+        </p>
+        <p class="text-[14px] text-txtsec">
+          1. Simplify Bulk SMS Campaigns – Provide a simple platform where
+          businesses can create, send, and track SMS campaigns.
+        </p>
+        <p class="text-[14px] text-txtsec">
+          2. Unlock New Revenue Streams – Expand the company’s footprint in the
+          SaaS market by offering a scalable messaging platform to businesses of
+          all sizes.
+        </p>
+      </div>
+
+      <!-- Problem statement -->
+      <div class="flex flex-col gap-[12px]">
+        <hr />
+        <h2 class="text-[14px] text-txtprim">Problem Statement</h2>
+        <p class="text-[14px] text-txtsec">
+          How might we design a tool that simplifies SMS communication between
+          businesses and their target audiences while allowing businesses and
+          other related parties to efficiently manage campaigns, personalize
+          messaging and ensure high deliverability and ease of use?
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Research -->
+  <div class="w-full flex flex-col gap-[60px]">
+    <!-- Section Header -->
+    <h2 class="text-[16px] text-txtsec italic">Research</h2>
+
+    <div class="flex flex-col gap-[60px]">
+      <!-- Research Appraach -->
+      <div class="flex flex-col gap-[12px]">
+        <hr />
+        <h2 class="text-[14px] text-txtprim">Research Approach</h2>
+        <div>
+          <p class="text-[14px] text-txtsec">
+            I conducted a combination of user interviews and competitive
+            analysis. The research process involved:
+          </p>
+          <p class="text-[14px] text-txtsec">
+            1. Competitive analysis of two major platforms, mNotify and Arkesel,
+            to identify strengths, weaknesses, and opportunities for
+            improvement.
+          </p>
+          <p class="text-[14px] text-txtsec">
+            2. Interviews with 12 potential users including Marketers, Business
+            owners, Event Organizers and Professionals in accredited
+            institutions to understand their workflows, frustrations, and
+            expectations when sending bulk messages.
+          </p>
+          <p class="text-[14px] text-txtsec">
+            3. Industry best practices in messaging platforms, ensuring the
+            final design aligns with user expectations and modern usability
+            standards.
+          </p>
+        </div>
+      </div>
+
+      <!-- Competitive Analysis -->
+      <div class="flex flex-col gap-[12px]">
+        <hr />
+        <h2 class="text-[14px] text-txtprim">Competitive Analysis</h2>
+        <p class="text-[14px] text-txtsec">
+          To understand the competitive landscape and ensure our bulk SMS web
+          app performed effectively, I analyzed two existing platforms: mNotify
+          and Arkesel. By evaluating their core features, UI/UX design, and
+          overall user experience, I identified key strengths and areas for
+          improvement to inform our app's design.
+        </p>
+      </div>
+
+      <!-- Mnotify -->
+      <div class="flex flex-col gap-[12px]">
+        <hr />
+        <h2 class="text-[14px] text-txtprim">mNotify</h2>
+        <!-- Image -->
+        <div
+          class="w-full h-fit xl:w-[810px] xl:h-[432px] self-center rounded-[4px] overflow-hidden"
+        >
+          <img
+            class="w-full h-full object-cover"
+            src="/src/assets/work-pd-images/relay/mnotifylanding.jpg"
+            alt="mnotify landing page image"
+          />
+        </div>
+        <!-- Strengths -->
+        <div>
+          <p class="text-[14px] text-txtsec">Strengths</p>
+          <p class="text-[14px] text-txtsec">
+            1. Core Features: Includes bulk SMS messaging, contact management,
+            and campaign history tracking.
+          </p>
+          <p class="text-[14px] text-txtsec">
+            2. Switch Channels: Users can switch between different services,
+            offering scalability and flexibility.
+          </p>
+        </div>
+        <!-- Weaknesses -->
+        <div>
+          <p class="text-[14px] text-txtsec">Weaknesses</p>
+          <p class="text-[14px] text-txtsec">
+            1. Poor Onboarding: The login/register CTA blends into navigation.
+            Additionally, users must load a wallet before purchasing SMS
+            packages, adding unnecessary friction.
+          </p>
+          <p class="text-[14px] text-txtsec">
+            2. Cluttered UI: Inconsistent font sizes and visual hierarchy create
+            an overwhelming interface.
+          </p>
+          <p class="text-[14px] text-txtsec">
+            3. Redundant Pages: The 'Send Message' and 'Campaign History' pages
+            could be merged, as they essentially serve similar purposes.
+          </p>
+          <p class="text-[14px] text-txtsec">
+            4. Lack of Clear Interactivity: No clear hover states or interactive
+            feedback on clickable elements, making navigation less intuitive.
+          </p>
+        </div>
+        <!-- Opportunities For Improvement -->
+        <div>
+          <p class="text-[14px] text-txtsec">Opportunities for Improvement</p>
+          <p class="text-[14px] text-txtsec">
+            1. Simplify the user flow by removing unnecessary steps such as
+            wallet loading.
+          </p>
+          <p class="text-[14px] text-txtsec">
+            2. Redesign the UI with a cleaner, more structured layout
+            emphasizing key functionalities.
+          </p>
+          <p class="text-[14px] text-txtsec">
+            3. Merge redundant pages for a simpler user experience.
+          </p>
+          <p class="text-[14px] text-txtsec">
+            4. Add hover states and interactive cues to improve engagement.
+          </p>
+        </div>
+      </div>
+
+      <!-- Arkesel -->
+      <div class="flex flex-col gap-[12px]">
+        <hr />
+        <h2 class="text-[14px] text-txtprim">Arkesel</h2>
+        <!-- Image -->
+        <div
+          class="w-full h-fit xl:w-[810px] xl:h-[432px] self-center rounded-[4px] overflow-hidden"
+        >
+          <img
+            class="w-full h-full object-cover"
+            src="/src/assets/work-pd-images/relay/arkesellanding.jpg"
+            alt="mnotify landing page image"
+          />
+        </div>
+        <!-- Strengths -->
+        <div>
+          <p class="text-[14px] text-txtsec">Strengths</p>
+          <p class="text-[14px] text-txtsec">
+            1. Clean UI: The interface is well-organized and visually less
+            cluttered.
+          </p>
+          <p class="text-[14px] text-txtsec">
+            2. Simple Navigation: The platform keeps navigation simple and
+            straightforward, which makes it easy to understand.
+          </p>
+        </div>
+        <!-- Weaknesses -->
+        <div>
+          <p class="text-[14px] text-txtsec">Weaknesses</p>
+          <p class="text-[14px] text-txtsec">
+            1. Outdated Design: While structured, the UI lacks modern design
+            trends, making it feel outdated.
+          </p>
+          <p class="text-[14px] text-txtsec">
+            2. Overcomplicated Menus: Some menus could be consolidated to
+            improve ease of use.
+          </p>
+          <p class="text-[14px] text-txtsec">
+            3. Restrictive Onboarding: Users must select a service before
+            accessing the dashboard, limiting flexibility.
+          </p>
+        </div>
+        <!-- Opportunities For Improvement -->
+        <div>
+          <p class="text-[14px] text-txtsec">Opportunities for Improvement</p>
+          <p class="text-[14px] text-txtsec">
+            1. Refresh the UI with modern design elements while maintaining
+            clarity.
+          </p>
+          <p class="text-[14px] text-txtsec">
+            2. Simplify menus by merging related features and pages into a
+            single page.
+          </p>
+          <p class="text-[14px] text-txtsec">
+            3. Adjust onboarding to direct users to a centralized default
+            dashboard before service selection.
+          </p>
+        </div>
+      </div>
+
+      <!-- Tabulated Summary Of Competitive Analysis -->
+      <div class="flex flex-col gap-[12px]">
+        <hr />
+        <h2 class="text-[14px] text-txtprim">
+          Tabulated Summary Of Competitive Analysis
+        </h2>
+        <!-- Table -->
+        <div
+          class="pr-[88px] xl:pr-0 w-full md:w-[700px] overflow-x-scroll xl:overflow-visible xl:w-fit xl:self-center"
+        >
+          <div class="w-[810px] flex flex-col">
+            <!-- 1st row -->
+            <div
+              class="flex border-[1px] border-bddef border-r-transparent text-[14px] text-txtprim"
+            >
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>Feature/Aspect</p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>mNotify</p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>Arkesel</p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>Opportunities</p>
+              </div>
+            </div>
+
+            <!-- 2nd row -->
+            <div
+              class="flex border-[1px] border-bddef border-r-transparent border-t-transparent text-[12px] text-txtsec"
+            >
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>User Onboarding</p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>Simple sign-up (email, phone, password), but unclear CTA.</p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>More detailed sign-up but user flow feels rigid.</p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>
+                  Improve visibility of onboarding CTAs and simplify required
+                  fields.
+                </p>
+              </div>
+            </div>
+
+            <!-- 3rd row -->
+            <div
+              class="flex border-[1px] border-bddef border-r-transparent border-t-transparent text-[12px] text-txtsec"
+            >
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>Landing Page</p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>
+                  Provides enough information but lacks visual and structural
+                  consistency.
+                </p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>Clean but design aesthetics could be improved.</p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>
+                  Use a modern, responsive design with consistent fonts, cases,
+                  and white space.
+                </p>
+              </div>
+            </div>
+
+            <!-- 4th row -->
+            <div
+              class="flex border-[1px] border-bddef border-r-transparent border-t-transparent text-[12px] text-txtsec"
+            >
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>Core Functionalities</p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>
+                  Bulk SMS, group messages, wallet system, campaign history,
+                  switch channels.
+                </p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>Bulk SMS, detailed report history.</p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>
+                  Avoid unnecessary steps (e.g., wallet loading); merge similar
+                  pages for a simplified user flow.
+                </p>
+              </div>
+            </div>
+
+            <!-- 5th row -->
+            <div
+              class="flex border-[1px] border-bddef border-r-transparent border-t-transparent text-[12px] text-txtsec"
+            >
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>Dashboard</p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>Overcrowded with inconsistent font sizes and cases.</p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>Clean and structured but overcomplicates menus.</p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>
+                  Offer a clear, concise dashboard with simple sms analytics and
+                  actionable insights at a glance.
+                </p>
+              </div>
+            </div>
+
+            <!-- 6th row -->
+            <div
+              class="flex border-[1px] border-bddef border-r-transparent border-t-transparent text-[12px] text-txtsec"
+            >
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>Navigation</p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>
+                  Overloaded UI with redundant links and no clear hover states.
+                </p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>Too many menus.</p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>
+                  Aggregate menus, simplify navigation, and provide hover states
+                  for better UX.
+                </p>
+              </div>
+            </div>
+
+            <!-- 7th row -->
+            <div
+              class="flex border-[1px] border-bddef border-r-transparent border-t-transparent text-[12px] text-txtsec"
+            >
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>FAQs/Help</p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>Comprehensive FAQ and tutorials.</p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>Not mentioned, assumed limited.</p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>
+                  Build on mNotify’s FAQ section, but make it more interactive
+                  (e.g., contextual tips or chatbot support).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- User Interviews -->
+      <div class="flex flex-col gap-[12px]">
+        <hr />
+        <h2 class="text-[14px] text-txtprim">User Interviews</h2>
+        <p class="text-[14px] text-txtsec">
+          Following the analysis I conducted 12 structured interviews and
+          usability testing with existing bulk SMS platforms. The goal was to
+          understand how businesses and other related parties use bulk
+          messaging, what challenges they face, and what features they truly
+          need.
+        </p>
+        <div>
+          <p class="text-[14px] text-txtsec">
+            To guide the research, I asked participants a mix of open-ended and
+            specific questions, such as:
+          </p>
+          <ul class="text-[14px] text-txtsec list-disc ml-[18px]">
+            <li>
+              "What platform do you currently use for bulk messaging, and why?"
+            </li>
+            <li>"What challenges do you face when sending mass messages?"</li>
+            <li>
+              "How do you measure the effectiveness of your SMS campaigns?"
+            </li>
+            <li>
+              "If you could improve one thing about your current tool, what
+              would it be?"
+            </li>
+          </ul>
+        </div>
+        <p class="text-[14px] text-txtsec">
+          Through these discussions, I gained insights into user frustrations,
+          preferences, and unmet needs.
+        </p>
+      </div>
+
+      <!-- Key Pain Points & Opportunities -->
+      <div class="flex flex-col gap-[12px]">
+        <hr />
+        <h2 class="text-[14px] text-txtprim">
+          Key Pain Points & Opportunities
+        </h2>
+        <p class="text-[14px] text-txtsec">
+          From the interviews and usability testing, the following key themes
+          emerged:
+        </p>
+        <!-- Table -->
+        <div
+          class="pr-[88px] xl:pr-0 w-full md:w-[700px] overflow-x-scroll xl:overflow-visible xl:w-fit xl:self-center"
+        >
+          <div class="w-[810px] flex flex-col self-center">
+            <!-- 1st row -->
+            <div
+              class="flex border-[1px] border-bddef border-r-transparent text-[14px] text-txtprim"
+            >
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>Key Insight</p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>What This Means for Relay</p>
+              </div>
+            </div>
+
+            <!-- 2nd row -->
+            <div
+              class="flex border-[1px] border-bddef border-r-transparent border-t-transparent text-[12px] text-txtsec"
+            >
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>
+                  Users prioritize ease of use. Most users feel existing
+                  platforms are cluttered and cause friction during certain
+                  flows.
+                </p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>
+                  A clean and minimal interface with simple navigation, clear
+                  information and CTAs is essential to improve adoption and
+                  usability.
+                </p>
+              </div>
+            </div>
+
+            <!-- 3rd row -->
+            <div
+              class="flex border-[1px] border-bddef border-r-transparent border-t-transparent text-[12px] text-txtsec"
+            >
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>
+                  Message scheduling lacks flexibility. Users want more control
+                  over timing, frequency, and audience segmentation.
+                </p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>
+                  Advanced scheduling options with recurring messages,
+                  personalized delivery windows, and audience segmentation
+                  should be core features.
+                </p>
+              </div>
+            </div>
+
+            <!-- 4th row -->
+            <div
+              class="flex border-[1px] border-bddef border-r-transparent border-t-transparent text-[12px] text-txtsec"
+            >
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>
+                  Uncompetitive costs and unclear pricing . Users often feel
+                  existing platforms are expensive, with unclear fees.
+                </p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>
+                  A transparent pricing model with cost estimates per campaign,
+                  pay-as-needed options will enhance trust and affordability.
+                </p>
+              </div>
+            </div>
+
+            <!-- 5th row -->
+            <div
+              class="flex border-[1px] border-bddef border-r-transparent border-t-transparent text-[12px] text-txtsec"
+            >
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>Users prioritize message deliverability.</p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>
+                  Relay should display clear “Delivered” and “Failed” statuses.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- User Personas -->
+      <div class="flex flex-col gap-[12px]">
+        <hr />
+        <h2 class="text-[14px] text-txtprim">User Personas</h2>
+        <p class="text-[14px] text-txtsec">
+          Using the insights from research, I developed three user archetypes to
+          ensure that Relay meets diverse user needs:
+        </p>
+        <!-- Table -->
+        <div
+          class="pr-[88px] xl:pr-0 w-full md:w-[700px] overflow-x-scroll xl:overflow-visible xl:w-fit xl:self-center"
+        >
+          <div class="w-[810px] flex flex-col self-center">
+            <!-- 1st row -->
+            <div
+              class="flex border-[1px] border-bddef border-r-transparent text-[14px] text-txtprim"
+            >
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>Persona</p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>Who they are</p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>Pain Points</p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>Needs</p>
+              </div>
+            </div>
+
+            <!-- 2nd row -->
+            <div
+              class="flex border-[1px] border-bddef border-r-transparent border-t-transparent text-[12px] text-txtsec"
+            >
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>Sarah (Small Business Owner)</p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>Owns a boutique and sends promotions via SMS.</p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <ul class="list-disc pl-[8px]">
+                  <li>
+                    Finds current platforms too complex for simple messaging.
+                  </li>
+                  <li>
+                    Often forgets to send messages, leading to missed marketing
+                    opportunities.
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <ul class="list-disc pl-[8px]">
+                  <li>A simple, no-friction way to send bulk messages.</li>
+                  <li>
+                    The ability to automate recurring messages (e.g., weekly
+                    promotions).
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 3rd row -->
+            <div
+              class="flex border-[1px] border-bddef border-r-transparent border-t-transparent text-[12px] text-txtsec"
+            >
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>Elena (Event Organizer)</p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>
+                  Manages ticketed events and sends bulk SMS reminders for
+                  ticketed events.
+                </p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <ul class="list-disc pl-[8px]">
+                  <li>
+                    Struggles with rigid scheduling options in other platforms.
+                  </li>
+                  <li>
+                    Can’t group contacts efficiently for different event lists.
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <ul class="list-disc pl-[8px]">
+                  <li>
+                    Flexible scheduling (batch sending, time-zone-based
+                    delivery).
+                  </li>
+                  <li>A contact grouping system that’s easy to manage.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 4th row -->
+            <div
+              class="flex border-[1px] border-bddef border-r-transparent border-t-transparent text-[12px] text-txtsec"
+            >
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>James (University Communications Officer)</p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <p>Manages student communications for a university.</p>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <ul class="list-disc pl-[8px]">
+                  <li>
+                    Struggles with segmentation, making it hard to send messages
+                    to specific student groups.
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="w-full border-solid border-transparent border-[1px] border-r-bddef px-[16px] py-[8px]"
+              >
+                <ul class="list-disc pl-[8px]">
+                  <li>
+                    The ability to send targeted messages (e.g., only to
+                    first-year students or faculty).
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- How These Insights Shaped the Design -->
+      <div class="flex flex-col gap-[12px]">
+        <hr />
+        <h2 class="text-[14px] text-txtprim">
+          How These Insights Shaped the Design
+        </h2>
+        <div class="flex flex-col gap-[60px]">
+          <p class="text-[14px] text-txtsec">
+            Based on these findings, we defined the following major design
+            priorities for Relay:
+          </p>
+
+          <!-- First priority -->
+          <div class="text-[14px] text-txtsec">
+            <ul class="list-disc">
+              <p>1. A Cleaner, More Focused UI</p>
+              <div class="pl-[16px]">
+                <li>
+                  Existing bulk SMS platforms clutter the interface with
+                  information.
+                </li>
+                <li>
+                  Users get overwhelmed by complex layouts before sending a
+                  message.
+                </li>
+              </div>
+            </ul>
+            <p>
+              We’ll create a simple dashboard that highlights only two key
+              actions:
+            </p>
+            <ul class="list-disc">
+              <div class="pl-[16px]">
+                <li>Send SMS (Primary button for immediate action)</li>
+                <li>Simple Reports</li>
+              </div>
+            </ul>
+            <p>This matter because:</p>
+            <ul class="list-disc">
+              <div class="pl-[16px]">
+                <li>
+                  Simplifying the interface reduces friction and allows users to
+                  complete tasks faster.
+                </li>
+              </div>
+            </ul>
+          </div>
+
+          <!-- Second priority -->
+          <div class="text-[14px] text-txtsec">
+            <ul class="list-disc">
+              <p>2. Advanced Scheduling & Automation</p>
+              <div class="pl-[16px]">
+                <li>
+                  Users need more control over timing and audience segmentation.
+                </li>
+                <li>
+                  Some platforms don’t allow messages to be sent at optimal
+                  times and at recurring intervals.
+                </li>
+              </div>
+            </ul>
+            <p>Relay’s scheduling features will include:</p>
+            <ul class="list-disc">
+              <div class="pl-[16px]">
+                <li>
+                  Time-Zone Awareness (Deliver at the best time based on user
+                  location)
+                </li>
+                <li>
+                  Recurring Campaigns (Automate weekly or monthly reminders.)
+                </li>
+              </div>
+            </ul>
+            <p>This matter because:</p>
+            <ul class="list-disc">
+              <div class="pl-[16px]">
+                <li>
+                  Users gain more flexibility and control over how their
+                  messages are delivered.
+                </li>
+              </div>
+            </ul>
+          </div>
+
+          <p class="text-[14px] text-txtsec">
+            Further research and usability testing would refine the user
+            experience based on user behavior.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Prototype -->
+  <div class="w-full flex flex-col gap-[60px]">
+    <!-- Section Header -->
+    <h2 class="text-[16px] text-txtsec italic">Prototype</h2>
+    <p class="text-[14px] text-txtsec">
+      Based on research insights, I translated key findings into UI/UX
+      improvements for Relay. The following section walks through the design
+      process, showcasing initial wireframes, UI comparisons, and final
+      solutions.
+    </p>
+
+    <div class="flex flex-col gap-[60px]">
+      <!-- A. Dashboard Simplification -->
+      <div class="flex flex-col gap-[12px]">
+        <hr />
+        <h2 class="text-[14px] text-txtprim">A. Dashboard Simplification</h2>
+        <p class="text-[14px] text-txtsec">
+          Users found existing messaging platforms cluttered and difficult to
+          navigate. To improve usability, I focused on a minimal, dashboard with
+          clear action buttons.
+        </p>
+        <div
+          class="w-full h-fit xl:w-[1200px] xl:h-[335px] 2xl:w-[1410px] 2xl:h-[394px] flex flex-col xl:flex-row gap-[12px] self-center"
+        >
+          <!-- Left Image -->
+          <div class="relative w-full h-full rounded-[4px] overflow-hidden">
+            <img
+              class="w-full h-full object-cover"
+              src="/src/assets/work-pd-images/relay/mnotifydashboard.jpg"
+              alt="relay image"
+            />
+            <div
+              class="absolute bottom-[16px] left-[50%] translate-x-[-50%] px-[16px] py-[8px] rounded-[4px] border-bddef bg-[rgba(0,0,0,0.5)] backdrop-blur-[10px]"
+            >
+              <p class="text-[12px] text-txtprim">Before(Competitor UI)</p>
+            </div>
+          </div>
+
+          <!-- Right Image -->
+          <div class="relative w-full h-full rounded-[4px] overflow-hidden">
+            <img
+              class="w-full h-full object-cover"
+              src="/src/assets/work-pd-images/relay/relaydashboard.jpg"
+              alt="relay image"
+            />
+            <div
+              class="absolute bottom-[16px] left-[50%] translate-x-[-50%] px-[16px] py-[8px] rounded-[4px] border-bddef bg-[rgba(0,0,0,0.5)] backdrop-blur-[10px]"
+            >
+              <p class="text-[12px] text-txtprim">After(Relay)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- B. Flexible Scheduling Options -->
+      <div class="flex flex-col gap-[12px]">
+        <hr />
+        <h2 class="text-[14px] text-txtprim">B. Flexible Scheduling Options</h2>
+        <p class="text-[14px] text-txtsec">
+          Users wanted greater control over message timing and frequency. I
+          introduced smart scheduling features, allowing users to set recurring
+          messages, customize send date & times, and segment audiences for
+          personalized messaging.
+        </p>
+        <div
+          class="w-full h-fit xl:w-[1200px] xl:h-[335px] 2xl:w-[1410px] 2xl:h-[394px] flex flex-col xl:flex-row gap-[12px] self-center"
+        >
+          <!-- Left Image -->
+          <div class="relative w-full h-full rounded-[4px] overflow-hidden">
+            <img
+              class="w-full h-full object-cover"
+              src="/src/assets/work-pd-images/relay/relaywireframescheduling.jpg"
+              alt="relay image"
+            />
+            <div
+              class="absolute bottom-[16px] left-[50%] translate-x-[-50%] px-[16px] py-[8px] rounded-[4px] border-bddef bg-[rgba(0,0,0,0.5)] backdrop-blur-[10px]"
+            >
+              <p class="text-[12px] text-txtprim text-nowrap">
+                Wireframe (Low-fidelity sketch)
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Image -->
+          <div class="relative w-full h-full rounded-[4px] overflow-hidden">
+            <img
+              class="w-full h-full object-cover"
+              src="/src/assets/work-pd-images/relay/relayschedulingmodal.jpg"
+              alt="relay image"
+            />
+            <div
+              class="absolute bottom-[16px] left-[50%] translate-x-[-50%] px-[16px] py-[8px] rounded-[4px] border-bddef bg-[rgba(0,0,0,0.5)] backdrop-blur-[10px]"
+            >
+              <p class="text-[12px] text-txtprim">Final UI Mockup</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- C. Transparent Pricing -->
+      <div class="flex flex-col gap-[12px]">
+        <hr />
+        <h2 class="text-[14px] text-txtprim">C. Transparent Pricing</h2>
+        <p class="text-[14px] text-txtsec">
+          Users wanted clear pricing before sending messages. I implemented a
+          real-time cost estimator within the UI, giving them instant cost
+          breakdowns for individual messages and campaigns.
+        </p>
+        <div
+          class="w-full h-[390px] md:h-[710px] xl:w-[1200px] xl:h-[348px] 2xl:w-[1410px] 2xl:h-[410px] flex flex-col xl:flex-row gap-[12px] self-center"
+        >
+          <!-- Left Image -->
+          <div class="relative w-full h-full rounded-[4px] overflow-hidden">
+            <img
+              class="w-full h-full object-cover"
+              src="/src/assets/work-pd-images/relay/relaypricingwireframe.jpg"
+              alt="relay image"
+            />
+            <div
+              class="absolute bottom-[16px] left-[50%] translate-x-[-50%] px-[16px] py-[8px] rounded-[4px] border-bddef bg-[rgba(0,0,0,0.5)] backdrop-blur-[10px]"
+            >
+              <p class="text-[12px] text-txtprim text-nowrap">
+                Wireframe (Low-fidelity sketch)
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Image -->
+          <div class="relative w-full h-full rounded-[4px] overflow-hidden">
+            <div class="scroll-container w-full h-full overflow-y-scroll">
+              <img
+                class="w-full object-cover"
+                src="/src/assets/work-pd-images/relay/relaypricing.jpg"
+                alt="relay image"
+              />
+            </div>
+            <div
+              class="absolute bottom-[16px] left-[50%] translate-x-[-50%] px-[16px] py-[8px] rounded-[4px] border-bddef bg-[rgba(0,0,0,0.5)] backdrop-blur-[10px]"
+            >
+              <p class="text-[12px] text-txtprim">Final UI Mockup</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Outcome -->
+  <div class="w-full flex flex-col gap-[60px]">
+    <!-- Section Header -->
+    <h2 class="text-[16px] text-txtsec italic">Outcome</h2>
+
+    <div class="flex flex-col gap-[60px]">
+      <!-- Style guide -->
+      <div class="flex flex-col gap-[12px]">
+        <hr />
+        <h2 class="text-[14px] text-txtprim">Style guide</h2>
+        <p class="text-[14px] text-txtsec">
+          I created a simple style guide to ensure consistency across the
+          design. Key elements include:
+        </p>
+        <p class="text-[14px] text-txtsec">
+          Typography: I selected a modern, sans-serif font that ensures
+          readability across all devices and screen sizes. The font hierarchy
+          clearly differentiates headings, subheadings, and body text, giving
+          the user interface a clear structure.
+        </p>
+        <p class="text-[14px] text-txtsec">
+          Color Palette: Primary colors focus on blue to evoke trust and action,
+          while secondary colors for call-to-action buttons are designed to draw
+          attention without overwhelming the user.
+        </p>
+        <p class="text-[14px] text-txtsec">
+          Button Styles: Buttons are designed to stand out using contrasting
+          colors and a semi-rounded shape to enhance usab
+        </p>
+
+        <!-- Images -->
+        <div
+          class="w-full h-fit xl:w-[1200px] xl-h-[335px] 2xl:w-[1410px] 2xl:h-[410px] flex flex-col xl:flex-row gap-[12px] self-center"
+        >
+          <!-- Left Image -->
+          <div class="relative w-full h-full rounded-[4px] overflow-hidden">
+            <img
+              class="w-full h-full object-cover"
+              src="/src/assets/work-pd-images/relay/relaystyleguidecolors.jpg"
+              alt="relay image"
+            />
+            <div
+              class="absolute bottom-[16px] left-[50%] translate-x-[-50%] px-[16px] py-[8px] rounded-[4px] border-bddef bg-[rgba(0,0,0,0.5)] backdrop-blur-[10px]"
+            >
+              <p class="text-[12px] text-txtprim">Colors</p>
+            </div>
+          </div>
+
+          <!-- Center Image -->
+          <div class="relative w-full h-full rounded-[4px] overflow-hidden">
+            <img
+              class="w-full h-full object-cover"
+              src="/src/assets/work-pd-images/relay/relaystyleguidetypography.jpg"
+              alt="relay image"
+            />
+            <div
+              class="absolute bottom-[16px] left-[50%] translate-x-[-50%] px-[16px] py-[8px] rounded-[4px] border-bddef bg-[rgba(0,0,0,0.5)] backdrop-blur-[10px]"
+            >
+              <p class="text-[12px] text-txtprim">Typography</p>
+            </div>
+          </div>
+
+          <!-- Right Image -->
+          <div class="relative w-full h-full rounded-[4px] overflow-hidden">
+            <img
+              class="w-full h-full object-cover"
+              src="/src/assets/work-pd-images/relay/relaystyleguidebuttons.jpg"
+              alt="relay image"
+            />
+            <div
+              class="absolute bottom-[16px] left-[50%] translate-x-[-50%] px-[16px] py-[8px] rounded-[4px] border-bddef bg-[rgba(0,0,0,0.5)] backdrop-blur-[10px]"
+            >
+              <p class="text-[12px] text-txtprim">Buttons</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Final Design -->
+      <div class="flex flex-col gap-[12px]">
+        <hr />
+        <h2 class="text-[14px] text-txtprim">Final Design</h2>
+
+        <!-- Image row 1 -->
+        <div
+          class="w-full h-[390px] md:h-[710px] xl:w-[1200px] xl:h-[348px] 2xl:w-[1410px] 2xl:h-[410px] flex flex-col xl:flex-row gap-[12px] self-center"
+        >
+          <!-- Left Image -->
+          <div class="relative w-full h-full rounded-[4px] overflow-hidden">
+            <div class="scroll-container w-full h-full overflow-y-scroll">
+              <img
+                class="w-full object-cover"
+                src="/src/assets/work-pd-images/relay/relayhomepage.jpg"
+                alt="relay image"
+              />
+            </div>
+            <div
+              class="absolute bottom-[16px] left-[50%] translate-x-[-50%] px-[16px] py-[8px] rounded-[4px] border-bddef bg-[rgba(0,0,0,0.5)] backdrop-blur-[10px]"
+            >
+              <p class="text-[12px] text-txtprim">scroll to view overflow</p>
+            </div>
+          </div>
+
+          <!-- Right Image -->
+          <div class="relative w-full h-full rounded-[4px] overflow-hidden">
+            <div class="scroll-container w-full h-full overflow-y-scroll">
+              <img
+                class="w-full object-cover"
+                src="/src/assets/work-pd-images/relay/relayproducts.jpg"
+                alt="relay image"
+              />
+            </div>
+            <div
+              class="absolute bottom-[16px] left-[50%] translate-x-[-50%] px-[16px] py-[8px] rounded-[4px] border-bddef bg-[rgba(0,0,0,0.5)] backdrop-blur-[10px]"
+            >
+              <p class="text-[12px] text-txtprim">scroll to view overflow</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image row 2 -->
+        <div
+          class="w-full h-[390px] md:h-[710px] xl:w-[1200px] xl:h-[348px] 2xl:w-[1410px] 2xl:h-[410px] flex flex-col xl:flex-row gap-[12px] self-center"
+        >
+          <!-- Left Image -->
+          <div class="relative w-full h-full rounded-[4px] overflow-hidden">
+            <img
+              class="w-full h-full object-cover"
+              src="/src/assets/work-pd-images/relay/relayrechargesms.jpg"
+              alt="relay image"
+            />
+          </div>
+
+          <!-- Right Image -->
+          <div class="relative w-full h-full rounded-[4px] overflow-hidden">
+            <img
+              class="w-full h-full object-cover"
+              src="/src/assets/work-pd-images/relay/relaysendsms.jpg"
+              alt="relay image"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Impact & Next Steps -->
+      <div class="flex flex-col gap-[12px]">
+        <hr />
+        <h2 class="text-[14px] text-txtprim">Impact & Next Steps</h2>
+        <p class="text-[14px] text-txtsec">
+          The outcome of this design process is a platform that addresses key
+          user needs, simplifies complex processes, and stands out from the
+          competition. Moving forward, the next steps include:
+        </p>
+        <ul class="text-[14px] text-txtsec pl-[16px] list-disc">
+          <li>
+            User Testing to validate assumptions with users to ensure the
+            platform is meeting their needs and expectations.
+          </li>
+          <li>
+            Prototype Iterations based on user feedback to make further
+            adjustments to refine the UI and enhance usability.
+          </li>
+          <li>
+            Build MVP and prioritize the development of core features ensuring
+            we focus on high-impact functionalities that deliver immediate
+            value.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Click To View Figma Prototype -->
+      <a
+        target="_blank"
+        href="https://www.figma.com/design/rRMzutTyMKBvbGT00Ohv6U/RELAY?node-id=0-1&t=AHGsJJ9w4cMngMrt-1"
+      >
+        <div class="flex flex-col gap-[12px]">
+          <hr />
+          <h2 class="text-[14px] text-txtprim">
+            Click To View Figma Prototype
+          </h2>
+          <!-- Image Link -->
+          <div
+            class="w-full h-fit xl:w-[810px] xl:h-[456px] flex gap-[12px] self-center"
+          >
+            <!-- Left Image -->
+            <div class="relative w-full h-full rounded-[4px] overflow-hidden">
+              <img
+                class="w-full h-full object-cover"
+                src="/src/assets/work-pd-images/relay/relayfigmapreview.jpg"
+                alt="relay image"
+              />
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</BaseLayout>

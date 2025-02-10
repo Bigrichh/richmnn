@@ -3,8 +3,6 @@ import Plus from "../assets/Icons/Plus.svg";
 import Footer from "./Footer.astro";
 
 const { pageTitle } = Astro.props;
-const { extPageTitle } = Astro.props;
-const { showExtPageTitle } = Astro.props;
 ---
 
 <!-- Main Nav -->
@@ -14,8 +12,6 @@ const { showExtPageTitle } = Astro.props;
       <p><a href="/">richmnn.com</a></p>
       <p>/</p>
       <p class="text-txtprim lowercase">{pageTitle}</p>
-      {showExtPageTitle && <p>/</p>}
-      {showExtPageTitle && <p class="lowercase">{extPageTitle}</p>}
     </div>
 
     <!-- Plus Icon Toggle  -->

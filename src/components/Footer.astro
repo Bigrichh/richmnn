@@ -11,7 +11,7 @@ const { showHr } = Astro.props;
     <div class="w-full flex flex-col gap-[16px]">
       <p><a href="/about">About</a></p>
       <p>Blog</p>
-      <p>Work - product design</p>
+      <p><a href="/work-pd">Work - product design</a></p>
       <p>Work - software engineering; web</p>
     </div>
 
@@ -53,6 +53,7 @@ const { showHr } = Astro.props;
   p:hover {
     color: var(--text-primary);
     cursor: pointer;
+    text-decoration: underline;
   }
 
   .avatar {
